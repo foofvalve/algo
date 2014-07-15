@@ -19,10 +19,8 @@ namespace Stuff.RavenNoSql
         {
             _documentStore =
                 new DocumentStore { Url = "http://localhost:8080", DefaultDatabase = "ALGO2" };
-            _documentStore.Initialize();
-            
-            //_documentStore.RegisterListener(new UniqueConstraintsStoreListener());
-            
+            _documentStore.Initialize();            
+            //_documentStore.RegisterListener(new UniqueConstraintsStoreListener());            
         }
 
 
