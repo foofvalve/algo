@@ -48,11 +48,18 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="WebDriver">
+      <HintPath>..\packages\Selenium.WebDriver.2.42.0\lib\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\packages\Selenium.Support.2.42.0\lib\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Algore\DataClasses1.cs">
@@ -75,6 +82,7 @@
     <Compile Include="RavenNoSql\DailyPrice.cs" />
     <Compile Include="RavenNoSql\DataStore.cs" />
     <Compile Include="Tests\TestDBLayer.cs" />
+    <Compile Include="Tests\TestWebDriver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Algore\DataClasses1.dbml">
@@ -86,6 +94,7 @@
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </None>
     <None Include="App.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
